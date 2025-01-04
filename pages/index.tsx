@@ -28,7 +28,7 @@ export default function Home() {
         className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
       />
       <Head>
-        <title>Your Portfolio</title>
+        <title>Chris Peterkins</title>
         <meta name="description" content="Your portfolio description" />
       </Head>
 
