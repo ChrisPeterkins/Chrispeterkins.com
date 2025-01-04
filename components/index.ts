@@ -1,0 +1,8 @@
+export { About } from './About'
+export { Experience } from './Experience'
+export { Projects } from './Projects'
+export { Writing } from './Writing'
+export { Footer } from './Footer'
+export { Header } from './Header'
+export { Certifications } from './Certifications' 
+export { Tooltip } from './Tooltip'
