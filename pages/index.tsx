@@ -40,9 +40,8 @@ export default function Home() {
             <About />
             <Experience />
             <Projects />
-            <Writing />
-            <Footer />
             <Certifications />
+            <Footer />
           </main>
         </div>
       </div>
