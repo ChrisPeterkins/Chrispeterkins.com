@@ -4,21 +4,21 @@ import Image from 'next/image'
 const projects = [
   {
     title: "CLM Tools",
-    description: "DocuSign CLM Workflow Documentation Generator",
+    description: "An online DocuSign CLM workflow documentation generator. Create a repository of your workflows and their documentation. Maintains version history over time. Allows for online and word document generation.",
     image: "/images/project1.png",
     link: "https://clmtools.io",
     technologies: ["Python", "Flask", "SQLite", "Graphviz", "Nginx", "Gunicorn"]
   },  
   {
     title: "Short Form Video Generator",
-    description: "Automatically generates short form videos from Reddit posts and uploads them to Youtube, TikTok, and Instagram",
+    description: "An online tool to automatically generate short form videos from Reddit posts and upload them to Youtube, TikTok, and Instagram. Videos are generated with TTS audio and accompanying subtitles. Backkground videos are randomly selected from a repository of royalty free videos.",
     image: "/images/project2.png",
     link: "https://shortsgenerator.com",
     technologies: ["Python", "PRAW", "Edge TTS", "Moviepy", "SQLite", "Tkinter", "Youtube Data API"]
   },
   {
     title: "Personal Portfolio Website",
-    description: "My personal portfolio website built with Next.js, Tailwind CSS, and TypeScript",
+    description: "My personal portfolio/resume website built with Next.js, Tailwind CSS, and TypeScript.",
     image: "/images/project3.png",
     link: "https://chrispeterkins.com",
     technologies: ["React", "TypeScript", "Tailwind", "Next.js", "Node.js"]
