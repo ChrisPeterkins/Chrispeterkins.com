@@ -63,8 +63,9 @@ function ProjectCard({ title, description, image, link, technologies }: ProjectP
         <Image
           src={image}
           alt={`${title} preview`}
-          width={200}
-          height={48}
+          width={500}
+          height={300}
+          priority={true}
           className="aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
         />
       </div>

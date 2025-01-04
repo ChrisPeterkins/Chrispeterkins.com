@@ -1,0 +1,6 @@
+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
+
+git clone https://ChrisPeterkins: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@github.com/ChrisPeterkins/Chrispeterkins.com.git /var/www/chrispeterkins.com
+
+
+https://github.com/ChrisPeterkins/Chrispeterkins.com.git
