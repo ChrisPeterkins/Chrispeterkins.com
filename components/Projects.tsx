@@ -3,7 +3,21 @@ import Image from 'next/image'
 
 const projects = [
   {
-    title: "CLM Tools",
+    title: "CLM DevOps Tool",
+    description: "A desktop app that manages the lifecycle of a DocuSign CLM Envrionment. Integrates with DocuSign CLM and JIRA to manage implementing new features from ideation to deployment. Features a fully functional test suite, peer review system and diff checking tools",
+    image: "/images/project4.png",
+    link: "https://github.com/ChrisPeterkins/ds-clm-devops",
+    technologies: ["TypeScript", "React", "Electron", "SQLite", "Node.js", "Redux"]
+  },
+  {
+    title: "Self-Hosted Budgeting App",
+    description:  "A comprehensive local-first budgeting application designed for couples to manage their finances together. Features include expense tracking, budget management, goal setting, bank statement imports (CSV/PDF), spending analytics, and multi-user support. Runs entirely on your computer with complete data privacy and zero ongoing costs.",
+    image: "/images/project5.png",
+    link: "https://github.com/ChrisPeterkins/budgeting-app",
+    technologies: ["TypeScript", "Next.js", "Tailwind", "SQLite", "React"]
+  },
+  {
+    title: "CLM Documentation Tool",
     description: "An online DocuSign CLM workflow documentation generator. Create a repository of your workflows and their documentation. Maintains version history over time. Allows for online and word document generation.",
     image: "/images/project1.png",
     link: "https://clmtools.io",
@@ -13,7 +27,7 @@ const projects = [
     title: "Short Form Video Generator",
     description: "An online tool to automatically generate short form videos from Reddit posts and upload them to Youtube, TikTok, and Instagram. Videos are generated with TTS audio and accompanying subtitles. Backkground videos are randomly selected from a repository of royalty free videos.",
     image: "/images/project2.png",
-    link: "https://shortsgenerator.com",
+    link: "https://github.com/ChrisPeterkins/RSSVU",
     technologies: ["Python", "PRAW", "Edge TTS", "Moviepy", "SQLite", "Tkinter", "Youtube Data API"]
   },
   {
