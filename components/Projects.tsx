@@ -17,18 +17,11 @@ const projects = [
     technologies: ["TypeScript"]
   },
   {
-    title: "CLM DevOps Tool",
-    description: "A desktop app that manages the lifecycle of a DocuSign CLM Environment. Integrates with DocuSign CLM and JIRA to manage implementing new features from ideation to deployment. Features a fully functional test suite, peer review system and diff checking tools.",
-    image: "/images/project4.png",
-    link: "https://github.com/ChrisPeterkins/ds-clm-devops",
-    technologies: ["TypeScript", "React", "Electron", "SQLite", "Node.js", "Redux"]
-  },
-  {
-    title: "DocuSign CLM GitHub Sync",
-    description: "Bidirectional sync between DocuSign CLM Admin folders and a GitHub repository. Supports multiple environments (dev, uat, prod) with independent sync branches, drift detection, cross-environment promotion, and a real-time web dashboard with Server-Sent Events.",
+    title: "Vellum",
+    description: "A cross-platform desktop workbench for DocuSign CLM release management. Connects to multiple CLM tenants, pulls down templates, deployment packages, workflows, and admin folder content, then syncs that content bidirectionally with a GitHub repository. Includes environment-scoped test suites, side-by-side workflow comparison, peer review, a durable sync history, and optional Playwright-driven browser capture.",
     image: null,
-    link: "https://github.com/ChrisPeterkins/ds-clm-github-sync",
-    technologies: ["TypeScript", "Node.js", "GitHub API", "DocuSign CLM API"]
+    link: "https://github.com/ChrisPeterkins/Vellum",
+    technologies: ["C#", ".NET 9", "Avalonia", "SQLite", "GitHub API", "Playwright", "xUnit"]
   },
   {
     title: "CLM Helper Extension",
@@ -38,13 +31,6 @@ const projects = [
     technologies: ["JavaScript", "HTML", "CSS"]
   },
   {
-    title: "Self-Hosted Budgeting App",
-    description: "A comprehensive local-first budgeting application designed for couples to manage their finances together. Features include expense tracking, budget management, goal setting, bank statement imports (CSV/PDF), spending analytics, and multi-user support. Runs entirely on your computer with complete data privacy and zero ongoing costs.",
-    image: "/images/project5.png",
-    link: "https://github.com/ChrisPeterkins/budgeting-app",
-    technologies: ["TypeScript", "Next.js", "Tailwind", "SQLite", "React"]
-  },
-  {
     title: "PA School Data Visualization",
     description: "A web application for visualizing and analyzing Pennsylvania school performance data from PSSA and Keystone exams. Features school search, interactive charts, historical data from 2015-2024, comparison tools, and state-level aggregate analytics.",
     image: null,
@@ -52,46 +38,53 @@ const projects = [
     technologies: ["TypeScript", "React", "Fastify", "SQLite", "Recharts", "Drizzle ORM"]
   },
   {
-    title: "Interactive Learning Platform",
-    description: "A comprehensive web development learning platform featuring 22+ interactive projects covering modern web technologies including React patterns, state management, Three.js, WebAssembly, WebRTC, shaders, and more. Live at learning.chrispeterkins.com.",
+    title: "Tessel",
+    description: "Windows-style window management for macOS. Snap windows to halves, thirds, quarters, and sixths with hotkeys, drag windows to screen edges with a live preview overlay, and throw them between displays. Also supports saved workspace arrangements, window stashing, custom sizes, and app pinning. A menu bar app written in native Swift with zero dependencies.",
     image: null,
-    link: "https://github.com/ChrisPeterkins/learning.chrispeterkins.com",
-    technologies: ["TypeScript", "React", "Three.js", "WebAssembly", "Rust", "GLSL"]
+    link: "https://github.com/ChrisPeterkins/Tessel",
+    technologies: ["Swift", "macOS", "Accessibility API"]
   },
   {
-    title: "CLM Documentation Tool",
-    description: "An online DocuSign CLM workflow documentation generator. Create a repository of your workflows and their documentation. Maintains version history over time. Allows for online and word document generation.",
-    image: "/images/project1.png",
-    link: "https://clmtools.io",
-    technologies: ["Python", "Flask", "SQLite", "Graphviz", "Nginx", "Gunicorn"]
-  },
-  {
-    title: "Short Form Video Generator",
-    description: "An online tool to automatically generate short form videos from Reddit posts and upload them to Youtube, TikTok, and Instagram. Videos are generated with TTS audio and accompanying subtitles. Background videos are randomly selected from a repository of royalty free videos.",
-    image: "/images/project2.png",
-    link: "https://github.com/ChrisPeterkins/RSSVU",
-    technologies: ["Python", "PRAW", "Edge TTS", "Moviepy", "SQLite", "Tkinter", "Youtube Data API"]
-  },
-  {
-    title: "C Calculator",
-    description: "A collection of calculator implementations in C, each under 1000 lines with no external dependencies. Includes a CLI REPL calculator, an enhanced terminal UI with history and arrow key navigation, and a native macOS Cocoa GUI application.",
+    title: "Claude History & Codex History",
+    description: "Terminal UIs for browsing your Claude Code and Codex conversation history. Three-panel project, session, and conversation layout with full Markdown rendering, syntax-highlighted code, collapsible tool calls, full-text search, vim-style marks, multiple color themes, and clipboard export to Markdown. Cross-platform for macOS, Linux, and Windows.",
     image: null,
-    link: "https://github.com/ChrisPeterkins/C-Calculator",
-    technologies: ["C", "Objective-C", "Cocoa"]
+    link: "https://github.com/ChrisPeterkins/claude-history",
+    technologies: ["Go", "Bubble Tea", "Lip Gloss", "Glamour"]
   },
   {
-    title: "Cube Field",
-    description: "A browser-based game built with vanilla HTML and JavaScript.",
+    title: "Lamplight",
+    description: "A cozy audiobook player and EPUB/PDF reader for macOS and iPhone. Point it at a folder and it builds a shelf from your files, reading titles, authors, and cover art from metadata. Automatically converts Audible .aax files into per-chapter .m4b files losslessly. The iPhone app adds an offline shelf, Files import, a paginated EPUB reader, a native PDF reader, and synced reading progress.",
     image: null,
-    link: "https://github.com/ChrisPeterkins/Cube-Field",
-    technologies: ["JavaScript", "HTML"]
+    link: "https://github.com/ChrisPeterkins/Lamplight",
+    technologies: ["Electron", "JavaScript", "Swift", "SwiftUI", "FFmpeg"]
   },
   {
-    title: "Personal Portfolio Website",
-    description: "My personal portfolio/resume website built with Next.js, Tailwind CSS, and TypeScript.",
-    image: "/images/project3.png",
-    link: "https://chrispeterkins.com",
-    technologies: ["React", "TypeScript", "Tailwind", "Next.js", "Node.js"]
+    title: "Paper Trail",
+    description: "A private, single-owner tracker for congressional financial disclosures. Ingests official House filings, preserves the raw source documents, resolves securities and market prices, and surfaces followed-person and watchlisted-security activity in a curated feed. Scanned filings are recognized entirely on-device with Apple Vision OCR and queued for owner review before any row is approved.",
+    image: null,
+    link: "https://github.com/ChrisPeterkins/paper-trail",
+    technologies: ["Python", "Django", "SQLite", "Apple Vision", "OpenFIGI", "Tiingo"]
+  },
+  {
+    title: "AtticWatch",
+    description: "A native macOS monitor for a GardePro E6 trail camera. Performs the full vendor handshake itself over Bluetooth and Wi-Fi, streams the camera's H.264 RTSP feed, and reads and writes the camera's own settings. Desktop motion detection saves pre-roll MP4 clips, classifies likely animals locally with Apple Vision, and provides an event timeline, motion heatmap, and daily contact-sheet export.",
+    image: null,
+    link: "https://github.com/ChrisPeterkins/AtticWatch",
+    technologies: ["Swift", "macOS", "RTSP", "Apple Vision", "CoreBluetooth"]
+  },
+  {
+    title: "OSRS Tangleroot Drop Calculator",
+    description: "An offline desktop calculator for Tangleroot, the Old School RuneScape Farming pet. Configure your farm run and Farming level to see your odds per run, a cumulative curve toward 99% confidence, milestone estimates, a per-crop contribution breakdown, and a dry-streak read-out. Covers all 80 crops across 21 patch types with rates sourced from the OSRS Wiki, fully bundled with no network access.",
+    image: null,
+    link: "https://github.com/ChrisPeterkins/OSRS-Tangleroot-Drop-Calculator",
+    technologies: ["JavaScript", "Electron", "HTML", "CSS"]
+  },
+  {
+    title: "Home Automation System",
+    description: "A macOS SwiftUI app for managing a home or multi-property portfolio from one place. Combines an interactive floor-plan editor with electrical, plumbing, HVAC, and network overlays, inventory tracking with QR codes and reorder alerts, maintenance scheduling, bills, documents with OCR, contacts, vehicles, and a full audit trail. Exports property backups plus buyer and estate binder PDFs.",
+    image: null,
+    link: "https://github.com/ChrisPeterkins/home-automation-system",
+    technologies: ["Swift", "SwiftUI", "SwiftData", "macOS"]
   },
 ];
 
